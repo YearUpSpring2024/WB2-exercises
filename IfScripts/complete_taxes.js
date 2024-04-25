@@ -51,7 +51,7 @@ else if (filingStatus === "joint") {
         taxRate = 0.20;
     }
 } else {
-    console.log("invalid filing status")
+    console.log("invalid filing status");
 }
 
 // how much tax they hold
@@ -61,6 +61,6 @@ let net = weeklyGrossPay - taxHold;
 
 console.log("You worked " + hoursWorked + " hours this period ");
 console.log("Because you earn $" + payRate + " per hour, your gross pay is $" + weeklyGrossPay);
-console.log("Your filing status is Single");
+console.log("Your filing status is " + filingStatus);
 console.log("Your tax withholdings this period is $" + taxHold);
 console.log("Your net pay is $" + net);
