@@ -1,19 +1,30 @@
 "use scripts";
 
 
-var a, b,c;
+var a, b, c;
 
-a = 3;
-b = 5;
-c= 8;
+a = 5;
+b = 7;
+c = 10;
 
 var smallestNum = a;
+var largestNum = a;
 
-if(b < smallestNum){
+if (b < smallestNum) {
     smallestNum = b;
-}else if(c < smallestNum){
-    
+} else if (c < smallestNum) {
+
     smallestNum = c;
 }
 
-console.log(smallestNum)
+if (b > largestNum) {
+    largestNum = b;
+}
+else if (c > largestNum) {
+    largestNum = c;
+}
+else {
+    console.log("This is not a number")
+}
+console.log(smallestNum);
+console.log(largestNum);
